@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            
+        }
+        .box1 {
+            box-sizing: border-box;
+            background-color: #f2f2f2;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        @keyframes slide {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        @keyframes scale {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        .logos {
+            overflow: hidden;
+            padding: 40px 0;
+            background-color: white;
+            white-space: nowrap;
+            position: relative;
+            max-width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .logos:before,
+        .logos:after {
+            position: absolute;
+            top: 0;
+            width: 150px;
+            height: 100%;
+            content: "";
+            z-index: 2;
+        }
+        .logos:before {
+            left: 0;
+            background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(243, 82, 82, 0.8));
+        }
+        .logos:after {
+            right: 0;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(243, 82, 82, 0.8));
+        }
+        .logos:hover .logos-slide {
+            animation-play-state: paused;
+        }
+        .logos-slide {
+            display: inline-block;
+            animation: 25s slide infinite linear;
+        }
+        .logos-slide img {
+            height: 50px;
+            margin: 0 20px;
+            animation: 10s scale infinite ease-in-out;
+            transition: transform 0.3s;
+        }
+        .logos-slide img:hover {
+            transform: scale(1.2);
+        }
+        @media (max-width: 768px) {
+            .logos-slide img {
+                height: 40px;
+                margin: 0 15px;
+            }
+            .logos:before, .logos:after {
+                width: 100px;
+            }
+        }
+        @media (max-width: 480px) {
+            .logos-slide img {
+                height: 30px;
+                margin: 0 10px;
+            }
+            .logos:before, .logos:after {
+                width: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+            </div>
+            <div class="logos-slide">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+                <img src="jit-white-logo.png" alt="img">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

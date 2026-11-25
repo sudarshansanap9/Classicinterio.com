@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classic Interio</title>
+  
+ 
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/fevicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<style>
+
+/* home */
+.homepage {
+    background-image: url(images/dining/show-background-dining-room.jpg);/* Replace 'background.jpg' with your image */
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff; /* Change text color */
+    text-align: center;
+}
+.homepage-heading {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+/* cards */
+.card {
+      width: 85%;
+      margin: 10px auto;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.2s;
+    }
+    .card h5{
+        color: black;
+        text-align: center;
+    }
+    .card a{
+      text-decoration: none;
+    }
+    
+    .card:hover img {
+      transform: scale(1.1);
+    }
+    .card-body {
+      padding: 20px;
+      background-color: #f8f9fa;
+    }
+    @media (max-width: 768px) {
+      .card {
+        width: 90%;
+      }
+    }
+    /* footer */ 
+.footer {
+            position: relative;
+            padding: 0 0 30px 0;
+            background: #333;
+        }
+        
+        .footer .footer-top {
+            background: #eb4d4b;
+            padding: 60px 0 30px 0;
+        }
+        
+        .footer .footer-top .footer-info,
+        .footer .footer-top .footer-links,
+        .footer .footer-top .footer-contact,
+        .footer .footer-top .footer-newsletter {
+            margin-bottom: 30px;
+        }
+        
+        .footer .footer-top .social-links a {
+            font-size: 18px;
+            display: inline-block;
+            background: #ffffff;
+            color: #eb4d4b;
+            line-height: 1;
+            padding: 9px 0;
+            margin-right: 4px;
+            text-align: center;
+            width: 36px;
+            height: 36px;
+            transition: 0.3s;
+        }
+        
+        .footer .footer-top .social-links a:hover {
+            background: #d9403d;
+            color: #ffffff;
+        }
+        
+        .footer .footer-top h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #ffffff;
+            text-transform: uppercase;
+            position: relative;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        
+        .footer .footer-top h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 0;
+            width: 50px;
+            border-bottom: 2px solid #ffffff;
+        }
+        
+        .footer .footer-top .footer-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .footer .footer-top .footer-links ul i {
+            padding-right: 8px;
+            color: #ffffff;
+            font-size: 16px;
+        }
+        
+        .footer .footer-top .footer-links ul li {
+            border-bottom: 1px solid #ffffff;
+            padding: 7px 0;
+        }
+        
+        .footer .footer-top .footer-links ul li:first-child {
+            padding-top: 0;
+        }
+        
+        .footer .footer-top .footer-links ul a {
+            font-size: 14px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .footer .footer-top .footer-links ul a:hover {
+            color: #00bfff;
+        }
+        
+        .footer .footer-top .footer-contact p {
+            color: #ffffff;
+            line-height: 26px;
+        }
+        
+        .footer .footer-top .footer-newsletter input[type="email"] {
+            padding: 6px 8px;
+            width: 60%;
+            border: 1px solid #ffffff;
+            background: transparent;
+            color: #ffffff;
+        }
+        
+        .footer .footer-top .footer-newsletter input[type="submit"] {
+            border: 0;
+            width: 40%;
+            padding: 6px 0;
+            text-align: center;
+            color: black;
+            border: 1px solid #ffffff;
+            background: #ffffff;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        
+        /* .footer .footer-top .footer-newsletter input[type="submit"]:hover {
+            color: #ffffff;
+            background: #00bfff;
+            border: 1px solid #d9403d;
+            letter-spacing: .2rem;
+        } */
+        
+        .footer .footer-top .footer-newsletter p {
+            color: #ffffff;
+            font-size: 14px;
+        }
+        
+        .footer .credit,
+        .footer .copyright {
+            text-align: center;
+            padding-top: 30px;
+        }
+        
+        @media (min-width: 768px) {
+            .footer .credit {
+                text-align: right;
+            }
+            
+            .footer .copyright {
+                text-align: left;
+            }
+          }
+</style>
+
+<body>
+  <script>
+    AOS.init({
+duration: 1800 // Duration in milliseconds
+});
+  </script>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <div class="top-bar" data-aos="fade-right">
+      <div class="container">
+        <div class="row"  style="font-size: 15px;">
+          <div class="col-12">
+            <a href="mailto:classicinterio.in@gmail.com" class=""><span class="mr-2  icon-envelope-open-o"></span> <span class="d-none d-md-inline-block"> classicinterio.in@gmail.com</span></a>
+            <span class="mx-md-2 d-inline-block"></span>
+            <a href="tel:+919823646644" class=""><span class="mr-2  icon-phone"></span> <span class="d-none d-md-inline-block"> +91 9823646644</span></a>
+
+          
+            <div class="float-right" style="font-size: 13px;">
+
+              <a href="index.html" class="">HOME |</a>
+              
+              <a href="form.html" class="">GET QUOTE |</a>
+              
+              <a href="about.html" class="">ABOUT US|</a>
+              
+              <a target="_blank" href="http://classicinterio.blogspot.in/" class="">BLOG</a>
+              
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container" >
+        <div class="row align-items-center position-relative" >
+
+
+          <div class="site-logo">
+            <a href="index.html" class="text-black"><img src="images/logo.png" alt="Logo" width="150px" height="70px"></a>
+          </div>
+
+          <div class="col-12" >
+            <nav class="site-navigation text-right ml-auto " role="navigation">
+
+              <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                <li><a href="kitchen.html" class="nav-link">KITCHENS</a></li>
+                <li><a href="Wardrobe.html" class="nav-link">WARDROBES</a></li>
+                <li><a href="master bedroom.html" class="nav-link">BEDROOM SETS</a></li>
+                <li><a href="design.html" class="nav-link">FULL HOME</a></li>
+                <li><a href="visit.html" class="nav-link">CONTACT US</a></li>
+
+
+                <!-- <li class="has-children"><a href="#about-section" class="nav-link">BEDROOM SETS</a>
+                  <ul class="dropdown arrow-top">
+                    <li><a href="#team-section" class="nav-link">OFFICE FURNITURE</a></li>
+                    <li><a href="#pricing-section" class="nav-link">CUSTOMISE FULL HOME</a></li>
+                    <li><a href="#faq-section" class="nav-link">FAQ</a></li>
+                    <li class="has-children">
+                      <a href="#">More Links</a>
+                      <ul class="dropdown">
+                        <li><a href="#">Menu One</a></li>
+                        <li><a href="#">Menu Two</a></li>
+                        <li><a href="#">Menu Three</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li> -->
+
+                
+
+                
+                <!-- <li><a href="#blog-section" class="nav-link">Blog</a></li>
+                <li><a href="#contact-section" class="nav-link">Contact</a></li> -->
+              </ul>
+            </nav>
+
+          </div>
+
+          <div class="toggle-button d-inline-block d-lg-none"><a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+        </div>
+      </div>
+
+    </header>
+
+    <!-- home -->
+    <div class="homepage">
+        <h1 class="homepage-heading">DINING ROOM INTERIOR</h1>
+    </div>
+
+    <!-- paragraph -->
+    <div class="container">
+        <h4 class="text-center mt-5">Your dining room deserves some TLC! Whether you want to keep it simple or glam it up, we can give you the look that you desire. Here's some design inspiration for your dining space.</h4>
+    </div>
+
+    <!-- cards -->
+    <div class="container-fluid" data-aos="zoom-in-up">
+        <!-- 1 -->
+        <div class="row">
+          <div class="col-lg-6">
+            <a href="images/dining/dining-room1.jpg" style="text-decoration: none;">
+              <div class="card">
+                <img src="images/dining/dining-room1.jpg" class="card-img-top" alt="Image 1">
+                <div class="card-body">
+                  <h5 class="card-title">Best 6-Seater Dining Room With Open Dining Area</h5>
+                  <a href="form.html" class="btn mt-2 btn-danger" ><b>GET QUOTE</b></a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a href="images/dining/dining-room2.jpg" style="text-decoration: none;">
+              <div class="card">
+                <img src="images/dining/dining-room2.jpg" class="card-img-top" alt="Image 2">
+                <div class="card-body">
+                  <h5 class="card-title">Small Dining Room With White And Marble Table Top</h5>
+                  <a href="form.html" class="btn mt-2 btn-danger" ><b>GET QUOTE</b></a>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="row">
+            <div class="col-lg-6">
+              <a href="images/dining/dining-room10.jpg" style="text-decoration: none;">
+                <div class="card">
+                  <img src="images/dining/dining-room10.jpg" class="card-img-top" alt="Image 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Royal Regale Dining Room</h5>
+                    <a href="form.html" class="btn mt-2 btn-danger" ><b>GET QUOTE</b></a>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-6">
+              <a href="images/dining/dining-room4.jpg" style="text-decoration: none;">
+                <div class="card">
+                  <img src="images/dining/dining-room4.jpg" class="card-img-top" alt="Image 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Modern 4-Seater Dining Room</h5>
+                    <a href="form.html" class="btn mt-2 btn-danger" ><b>GET QUOTE</b></a>
+                  </div>
+                </div>
+              </a>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="row">
+            <div class="col-lg-6">
+              <a href="images/dining/dining-room5.jpg" style="text-decoration: none;">
+                <div class="card">
+                  <img src="images/dining/dining-room5.jpg" class="card-img-top" alt="Image 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Modern 8-Seater Dining Room</h5>
+                    <a href="form.html" class="btn mt-2 btn-danger" ><b>GET QUOTE</b></a>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-6">
+              <a href="images/dining/dining-room6.jpg" style="text-decoration: none;">
+                <div class="card">
+                  <img src="images/dining/dining-room6.jpg" class="card-img-top" alt="Image 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Modern Dining Room With 4-seater Table</h5>
+                    <a href="form.html" class="btn mt-2 btn-danger" ><b>GET QUOTE</b></a>
+                  </div>
+                </div>
+              </a>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="row">
+            <div class="col-lg-6">
+              <a href="images/dining/dining-room7.jpg" style="text-decoration: none;">
+                <div class="card">
+                  <img src="images/dining/dining-room7.jpg" class="card-img-top" alt="Image 1">
+                  <div class="card-body">
+                    <h5 class="card-title">6-Seater Dining Room With Mirror Wall Panel</h5>
+                    <a href="form.html" class="btn mt-2 btn-danger" ><b>GET QUOTE</b></a>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-6">
+              <a href="images/dining/dining-room8.jpg" style="text-decoration: none;">
+                <div class="card">
+                  <img src="images/dining/dining-room8.jpg" class="card-img-top" alt="Image 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Modern Dining Room With 6 Seater Dining Table</h5>
+                    <a href="form.html" class="btn mt-2 btn-danger" ><b>GET QUOTE</b></a>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+    </div>
+    <!-- phone icon -->
+    <div class="phone-icon">
+      <a href="tel:+919823646644" target="_blank" rel="noopener noreferrer">
+          <img src="images/phone.png" alt="phone">
+      </a>
+  </div>
+    <!-- WhatsApp Icon -->
+    <div class="whatsapp-icon">
+      <a href="https://wa.me/+919823646644" target="_blank" rel="noopener noreferrer">
+          <img src="images/WhatsApp.png" alt="WhatsApp">
+      </a>
+  </div>
+   <!-- arrow icon -->
+  <div class="arrow-icon">
+    
+        <a href="#"><img src="images/arrow.png" alt="arrow"></a>
+    </a>
+</div>
+    <!-- footer -->
+    <div class="footer"  >
+      <div class="footer-top" >
+          <div class="container" data-aos="fade-right">
+              <div class="row">
+                  <div class="col-lg-3 col-md-6 footer-links">
+                      <h4>About Us</h4>
+                      <ul>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="index.html">Home</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="form.html">Get Quote</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="design.html">Design Ideas</a></li>
+                          <!-- <li><i class="ion-ios-arrow-forward"></i> <a href="">How It Works</a></li> -->
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="visit.html">Contact Us</a></li>
+                      </ul>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 footer-links">
+                      <h4>Useful Links</h4>
+                      <ul>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="kitchen.html">Kitchen</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="Wardrobe.html">Wardrobes</a></li>
+                          <!-- <li><i class="ion-ios-arrow-forward"></i> <a href="careers.html">Career</a></li> -->
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="master bedroom.html">Bedroom Sets</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="design.html">Full Home</a></li>
+                      </ul>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 footer-contact" style="font-size: 16px;">
+                      <h4>Contact Us</h4>
+                      <p>Classic Interio: <br>
+                        Shree Lakshmi Appartment,<br>
+                          Jehan Circle,  Nashik, Maharashtra 422013<br>
+                          <strong>Phone:</strong> +91 9823646644<br>
+                          <strong>Email:</strong> classicinterio.in@gmail.com<br>
+                      </p>
+
+                      <div class="social-links">
+                          <a href="https://twitter.com/classicinterio4"><i class="fa fa-twitter"></i></a>
+                          <a href="https://www.youtube.com/channel/UCK0FVuN0ykZjUw7jN0xVfHA"><i class="fa fa-youtube"></i></a>
+                          <a href="https://in.pinterest.com/mailprashh/pins/"><i class="fa fa-pinterest"></i></a>
+                          <a href="https://www.facebook.com/classicinterio"><i class="fa fa-facebook"></i></a>
+                          <a href="https://www.linkedin.com/in/classic-interio%E2%84%A2-300238111/"><i class="fa fa-linkedin"></i></a>
+                      </div>
+
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 footer-newsletter">
+                      <h4>Classic Interio</h4>
+                      <p>Classic Interio - SMART Modular Kitchen Studio & Furniture</p>
+                     
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-md-6 copyright" style="color: #fff; font-size: 1.3rem;">
+                  Copyright &copy; 2024 Classic Interio . All Rights Reserved.
+              </div>
+          </div>
+      </div>
+      
+  </div>
+
+  
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+</html>
